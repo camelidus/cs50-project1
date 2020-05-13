@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    LOGIN
+{% endblock %}
+
+{% block body %}
+    <h1>User Login</h1>
+
+    <form action="/" method="">
+
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Username">
+            <input type="password" class="form-control" name="name" placeholder="Pass here">
+
+{#            <select class="form-control" name="flight_id">#}
+{#                {% for book in books %}#}
+{#                    <option value="{{ book.id }}">{{ book.title }} by {{ book.author }}</option>#}
+{#                {% endfor %}#}
+{#            </select>#}
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary">OK</button>
+        </div>
+
+    </form>
+{% endblock %}
